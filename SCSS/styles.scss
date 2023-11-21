@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+h1{
+    text-align: center;
+}
+.collapse{
+    font-size: 20px;
+}
+ul{
+    padding-left: 0px;
+    li{
+        text-align: left; 
+    }
+}
+a:hover{
+    text-decoration: underline;
+    background-color: #4da4fc;
+    color: #4da4fc;
+}
+@mixin text_properties($align, $fontsize){
+    text-align: $align;
+    font-size: $fontsize;
+}
+.titulo{
+    @include text_properties(center,35);
+}
+.subtitulo{
+    @include text_properties(center,25);
+}
+.musculo{
+    p{
+        @include text_properties(none,medium);
+    }
+}
+.main{
+    p{
+        @include text_properties(none,20);
+    }  
+} 
+@mixin image_properties($width, $height, $border){
+    width: $width;
+    height: $height;
+    border-radius: $border;
+}
+.press{
+    @include image_properties(500px,300px ,none);
+    align-content: center;
+
+}
+.logos_cont{
+    @include image_properties(50px, 50px ,25px);
+}
+.loguito{
+    @include image_properties(60px, 60px ,35px);
+}
+
