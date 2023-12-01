@@ -4,17 +4,26 @@
     margin: 0;
     font-family: 'Oswald', sans-serif;
 }
+@media only screen and (max-width: 576px){
+    body{
+        background-color: black;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 960) {
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+}
+nav{
+    ul{
+        padding-left: 0%;
+    }
+}
 h1{
     text-align: center;
 }
 .collapse{
     font-size: 20px;
-}
-ul{
-    padding-left: 0px;
-    li{
-        text-align: left; 
-    }
 }
 a:hover{
     text-decoration: underline;

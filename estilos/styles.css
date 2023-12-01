@@ -5,19 +5,26 @@
   font-family: "Oswald", sans-serif;
 }
 
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: black;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 960px) {
+  body {
+    background-color: rgb(255, 0, 0);
+  }
+}
+nav ul {
+  padding-left: 0%;
+}
+
 h1 {
   text-align: center;
 }
 
 .collapse {
   font-size: 20px;
-}
-
-ul {
-  padding-left: 0px;
-}
-ul li {
-  text-align: left;
 }
 
 a:hover {
@@ -64,4 +71,5 @@ a:hover {
   height: 60px;
   border-radius: 35px;
 }
+
 /*# sourceMappingURL=styles.css.map */
