@@ -5,20 +5,6 @@
   font-family: "Oswald", sans-serif;
 }
 
-@media only screen and (max-width: 576px) {
-  body {
-    background-color: black;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 960px) {
-  body {
-    background-color: rgb(255, 0, 0);
-  }
-}
-nav ul {
-  padding-left: 0%;
-}
-
 h1 {
   text-align: center;
 }
@@ -27,10 +13,22 @@ h1 {
   font-size: 20px;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
-  background-color: #4da4fc;
-  color: #4da4fc;
+  background-color: #8000FF;
+  color: #8000FF;
+}
+
+#contacto .ig a:hover {
+  text-decoration: underline;
+  background-color: #8000FF;
+  color: #8000FF;
+}
+
+#contacto .telefono a:hover {
+  text-decoration: underline;
+  background-color: #8000FF;
+  color: #FFFFFF;
 }
 
 .titulo {
@@ -70,6 +68,17 @@ a:hover {
   width: 60px;
   height: 60px;
   border-radius: 35px;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 960) {
+  body {
+    background-color: rgb(255, 0, 0);
+  }
+}
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: black;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

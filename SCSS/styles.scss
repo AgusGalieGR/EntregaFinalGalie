@@ -1,34 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-}
-@media only screen and (max-width: 576px){
-    body{
-        background-color: black;
-    }
-}
-@media only screen and (min-width: 577px) and (max-width: 960) {
-    body{
-        background-color: rgb(255, 0, 0);
-    }
-}
-nav{
-    ul{
-        padding-left: 0%;
-    }
-}
+@import "general";
+$instagram-color:#8000FF;
+$telefono-color:#FFFFFF;
 h1{
     text-align: center;
 }
 .collapse{
     font-size: 20px;
 }
-a:hover{
+nav a:hover{
     text-decoration: underline;
-    background-color: #4da4fc;
-    color: #4da4fc;
+    background-color: $instagram-color;
+    color: $instagram-color;
+}
+#contacto .ig{
+    a:hover{
+        text-decoration: underline;
+        background-color: $instagram-color;
+        color: $instagram-color;
+    }
+}
+#contacto .telefono{
+    a:hover{
+        text-decoration: underline;
+        background-color: $instagram-color;
+        color: $telefono-color;
+    }
 }
 @mixin text_properties($align, $fontsize){
     text-align: $align;
@@ -67,4 +63,14 @@ a:hover{
     @include image_properties(60px, 60px ,35px);
 }
 
+@media only screen and (min-width: 577px) and (max-width: 960) {
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+}
+@media only screen and (max-width: 576px){
+    body{
+        background-color: black;
+    }
+}
 
