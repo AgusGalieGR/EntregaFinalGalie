@@ -1,4 +1,4 @@
-@import "general";
+@import "general.scss";
 $instagram-color:#8000FF;
 $telefono-color:rgb(255, 255, 255);
 body{
@@ -19,10 +19,6 @@ nav .nav-item a:hover{
     ul{
         display: flex;
         text-align: center;
-        position: absolute;
-        top: 97%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         li{
             list-style: none;
             margin: 1.2vw;
@@ -35,7 +31,7 @@ nav .nav-item a:hover{
                 color: #fa0000;
             }
             :hover{
-                transform: translateY(-1.2vw);
+                transform: translateY(-0.3vw);
                 box-shadow: 0 1.5vw 1.5vw rgba(0, 0, 0,0.1);
             }
             
@@ -79,12 +75,61 @@ nav .nav-item a:hover{
     @include image_properties(55px, 55px ,35px);
 }
 
+@media only screen and (min-width: 561px){
+    #contactos{
+        ul{
+            display: flex;
+            text-align: center;
+            li{
+                list-style: none;
+                margin: 30px;
+                font-size: 50px;
+                transition: .5s;
+                a{
+                    width: 50px;
+                    padding: 50px 0;
+                    display: block;
+                    color: #fa0000;
+                }
+                :hover{
+                    transform: translateY(-0.6vw);
+                    box-shadow: 0 1.5vw 1.5vw rgba(0, 0, 0,0.1);
+                }
+                
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 361px) and (max-width: 560px){
     body{
         .press{
             width: 330px;
             height: 210px;
             padding: 20px;
+        }
+    }
+    #contactos{
+        ul{
+            display: flex;
+            text-align: center;
+            li{
+                list-style: none;
+                margin: 5vw;
+                font-size: 9vw;
+                transition: .5s;
+                a{
+                    width: 5vw;
+                    padding: 2.5vw 0;
+                    display: block;
+                    color: #fa0000;
+                }
+                :hover{
+                    transform: translateY(-0.8vw);
+                    box-shadow: 0 1.5vw 1.5vw rgba(0, 0, 0,0.1);
+                }
+                
+            }
         }
     }
 }
@@ -94,6 +139,29 @@ nav .nav-item a:hover{
             width: 250px;
             height: 165px;
             padding: 20px;
+        }
+    }
+    #contactos{
+        ul{
+            display: flex;
+            text-align: center;
+            li{
+                list-style: none;
+                margin: 5vw;
+                font-size: 9vw;
+                transition: .5s;
+                a{
+                    width: 5vw;
+                    padding: 2.5vw 0;
+                    display: block;
+                    color: #fa0000;
+                }
+                :hover{
+                    transform: translateY(-0.8vw);
+                    box-shadow: 0 1.5vw 1.5vw rgba(0, 0, 0,0.1);
+                }
+                
+            }
         }
     }
 }
