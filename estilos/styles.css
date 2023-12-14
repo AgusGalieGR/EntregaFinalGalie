@@ -4,6 +4,9 @@
   margin: 0;
   font-family: "Oswald", sans-serif;
 }
+* body {
+  background-color: #91aaf3;
+}
 
 body {
   background-color: #91aaf3;
@@ -100,7 +103,7 @@ nav .nav-item a:hover {
     color: #fa0000;
   }
   #contactos ul li :hover {
-    transform: translateY(-0.6vw);
+    transform: translateY(-0.8vw);
     box-shadow: 0 1.5vw 1.5vw rgba(0, 0, 0, 0.1);
   }
 }
