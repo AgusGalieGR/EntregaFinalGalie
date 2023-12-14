@@ -1,11 +1,13 @@
 @import "general.scss";
 $instagram-color:#8000FF;
 $telefono-color:rgb(255, 255, 255);
-body{
-    background-color: #91aaf3; 
-}
+$principal:#ccd9ff;
+$primary:$principal;
 h1{
     text-align: center;
+}
+body{
+    --bs-body-bg:#91aaf3;
 }
 .collapse{
     font-size: 20px;
@@ -73,7 +75,9 @@ nav .nav-item a:hover{
 .loguito{
     @include image_properties(55px, 55px ,35px);
 }
-
+.color{
+    background-color: #91aaf3;
+}
 @media only screen and (min-width: 561px){
     #contactos{
         ul{
@@ -99,7 +103,6 @@ nav .nav-item a:hover{
         }
     }
 }
-
 @media only screen and (min-width: 361px) and (max-width: 560px){
     body{
         .press{
