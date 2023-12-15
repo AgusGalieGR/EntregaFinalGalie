@@ -5,6 +5,20 @@
   font-family: "Oswald", sans-serif;
 }
 
+body {
+  background-image: linear-gradient(to bottom right, #0040ff 0%, #587ff7 20%, #97aff7 40%, #b2c4fa 60%, #91aaf3 80%, #e5e9f7 1000%);
+  background-size: 200% 200%;
+  animation: movimiento 5s linear infinite alternate;
+}
+
+@keyframes movimiento {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
 h1 {
   text-align: center;
 }
@@ -27,7 +41,7 @@ nav .nav-item a:hover {
 }
 
 #contactos .whatsapp {
-  color: #00ff11;
+  color: #079e11;
 }
 
 #contactos .linkedin {
@@ -36,7 +50,6 @@ nav .nav-item a:hover {
 
 #contactos ul {
   display: flex;
-  text-align: center;
 }
 #contactos ul li {
   list-style: none;
@@ -59,8 +72,18 @@ nav .nav-item a:hover {
   font-size: 35;
 }
 
+.titulo-rutinas {
+  text-align: none;
+  font-size: 35;
+}
+
 .subtitulo {
   text-align: center;
+  font-size: 25;
+}
+
+.subtitulo-rutinas {
+  text-align: none;
   font-size: 25;
 }
 

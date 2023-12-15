@@ -1,13 +1,36 @@
-@import "general.scss";
+
+@import "general.scss"; 
 $instagram-color:#8000FF;
 $telefono-color:rgb(255, 255, 255);
-$whatsapp:#00ff11;
+$whatsapp:#079e11;
 $linkedin:rgb(0, 4, 255);
 $contactos: (
     "instagram": $instagram-color,
     "whatsapp": $whatsapp,
     "linkedin": $linkedin
 );
+body{
+    background-image: linear-gradient(
+        to bottom right,
+        #0040ff 0%,
+        #587ff7 20%,
+        #97aff7 40%,
+        #b2c4fa 60%,
+        #91aaf3 80%,
+        #e5e9f7 1000%,
+
+    );
+    background-size: 200% 200%;
+    animation: movimiento 5s linear infinite alternate;
+}
+@keyframes movimiento {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
 h1{
     text-align: center;
 }
@@ -29,7 +52,6 @@ nav .nav-item a:hover{
 #contactos{
     ul{
         display: flex;
-        text-align: center;
         li{
             list-style: none;
             margin: 1.2vw;
@@ -53,10 +75,16 @@ nav .nav-item a:hover{
     font-size: $fontsize;
 }
 .titulo{
-    @include text_properties(center,35);
+    @include text_properties(center,35); 
+}
+.titulo-rutinas{
+    @include text_properties(none,35);
 }
 .subtitulo{
-    @include text_properties(center,25);
+    @include text_properties(center,25); 
+}
+.subtitulo-rutinas{
+    @include text_properties(none,25);
 }
 .musculo{
     p{
